@@ -13,8 +13,11 @@
             <!-- ! Le bouton moins (-) : v-on:click va executer l'instruction 'count--' -->
             <button  v-on:click=count-- type="button" class="btn btn-danger">-</button>
             <h3 class="mx-3">le nombre : {{count}}</h3>
-            <!-- ! Variation, on utilise '@' au lieu de 'v-on:'  et on fait appel a une fonction au lieu d'une instruction-->
+            <!-- ! Variation, on utilise '@' au lieu de 'v-on:' -->
             <button  @click=count++ type="button" class="btn btn-success">+</button>
+            <!-- * Test, je veux appeler une methode définie dans mon fichier JS et l'attribuer comme valeur du @click -->
+            <button @click=plusDix() type="bouton" class = "btn btn-group"></button>
+            <!-- ? Ca marche pas :( )-->
         </div>
     </div>
     <!-- script pour contacter VUE -->

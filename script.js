@@ -5,8 +5,8 @@ Vue.createApp({
         }
     },
     methods:{
-        plus(event){
-            return event.target.count++;
+        plusDix(){
+            return count+=10;
         }
     }
 }).mount('#monApp');
