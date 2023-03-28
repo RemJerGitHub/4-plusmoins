@@ -10,14 +10,15 @@
 <body>
     <div id="monApp" class="container mt-4 mb-4 p-3 d-flex justify-content-center">
         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-            <button @click=moinsDix() type="bouton" class = "btn btn-warning">-10</button>
+            <!-- * Pour le fun du coup on fait le moins10 -->
+            <button @click=moinsDix type="bouton" class = "btn btn-warning">-10</button>
             <!-- ! Le bouton moins (-) : v-on:click va executer l'instruction 'count--' -->
             <button  v-on:click=count-- type="button" class="btn btn-danger">-</button>
             <h3 class="mx-3">le nombre : {{count}}</h3>
             <!-- ! Variation, on utilise '@' au lieu de 'v-on:' -->
             <button  @click=count++ type="button" class="btn btn-success">+</button>
             <!-- * Test, je veux appeler une methode définie dans mon fichier JS et l'attribuer comme valeur du @click -->
-            <button @click=plusDix() type="bouton" class = "btn btn-primary">+10</button>
+            <button @click=plusDix type="bouton" class = "btn btn-primary">+10</button>
         </div>
     </div>
     <!-- script pour contacter VUE -->
