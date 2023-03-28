@@ -10,6 +10,7 @@
 <body>
     <div id="monApp" class="container mt-4 mb-4 p-3 d-flex justify-content-center">
         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button @click=moinsDix() type="bouton" class = "btn btn-warning">-10</button>
             <!-- ! Le bouton moins (-) : v-on:click va executer l'instruction 'count--' -->
             <button  v-on:click=count-- type="button" class="btn btn-danger">-</button>
             <h3 class="mx-3">le nombre : {{count}}</h3>

@@ -7,6 +7,9 @@ Vue.createApp({
     methods:{
         plusDix(){
             return this.count+=10;
+        },
+        moinsDix(){
+            return this.count-=10;
         }
     }
 }).mount('#monApp');
